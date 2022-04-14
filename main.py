@@ -18,3 +18,5 @@ if __name__ == '__main__':
     os.system('allure gengerate ./reopore/xml -o ./allreport --clean')
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+#allure serve reopore/allure_row_1
+#pytest  D:\python-workpase\Allure_demo\case\test_case.py --alluredir=reopore/allure_row_1
