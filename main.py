@@ -14,9 +14,12 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
     #pytest  D:\python-workpase\Allure_demo\case\test_case.py --alluredir=reopore/allure_row_1
-    pytest.main(['-vs', './test_case.py::Testdome3', '--alluredir', './reopore/xml'])
+    #pytest.main(['-vs', './test_case.py::Testdome1', '--alluredir', './reopore/xml'])
+    os.system('pytest test_case.py --alluredir=allure-results  --clean-alluredir')
     os.system('allure gengerate ./reopore/xml -o ./allreport --clean')
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
 #allure serve reopore/allure_row_1
-#pytest  D:\python-workpase\Allure_demo\case\test_case.py --alluredir=reopore/allure_row_1
+#pytest  D:\python-workpase\Allure_demo\case\test_case.py --alluredir=reopore/allure_row_1 --clean-alluredir
+#pytest D:\python-workpase\Allure_demo\case\test_case.py
+#–alluredir=reopore/allure_row_1
